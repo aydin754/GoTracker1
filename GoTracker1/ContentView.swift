@@ -9,12 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack{
+                
+                Text("Hersey Go Tracker")
+                    .position(x: 180, y: 10)
+                
+                NavigationLink("Administrator"){
+                    Admin()
+                        .position(x:180, y: 40)
+                }
+                    
+                NavigationLink("Guest page"){
+                    Guest()
+                }
+                   
+                    
+                    
+                    
+                
+                
+                
+
+                
+                
         }
+       
+           
+        }
+        .bold()
         .padding()
     }
 }
