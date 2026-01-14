@@ -7,15 +7,18 @@
 
 import SwiftUI
 import Firebase
-@main
 
+@main
 struct GoTracker1App: App {
     init() {
         FirebaseApp.configure()
     }
     var body: some Scene {
+        @State var viewModel: TeamViewModel = TeamViewModel()
+
         WindowGroup {
             ContentView()
+                .environment(viewModel)
         }
     }
 }
