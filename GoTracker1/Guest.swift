@@ -7,7 +7,8 @@
 import SwiftUI
 struct Guest: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("")
+        .navigationBarTitle("Guest")
     }
 }
 

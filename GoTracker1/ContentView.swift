@@ -23,7 +23,8 @@ struct ContentView: View {
                 NavigationLink("Guest page"){
                     Guest()
                 }
-                   
+                
+            
                     
                     
                     
