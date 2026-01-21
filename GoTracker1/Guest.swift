@@ -11,7 +11,7 @@ struct Guest: View {
         .navigationBarTitle("Guest")
         
         NavigationLink("->") {
-            Field()
+            PlayerListView()
         }
     }
 }
