@@ -9,6 +9,10 @@ struct Guest: View {
     var body: some View {
         Text("")
         .navigationBarTitle("Guest")
+        
+        NavigationLink("->") {
+            Field()
+        }
     }
 }
 
