@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image(systemName: "jhhs")
+        Image("school")
             .resizable()
             .scaledToFit()
-            .frame(width: 240 , height: 240)
-            .padding()
+            .frame(width: 250)
+        
+        
+        
+        
         NavigationStack{
-            VStack{
+        
+                VStack{
+                    
+                
+            
                 
                     
                     
@@ -26,12 +33,16 @@ struct ContentView: View {
                 NavigationLink("Administrator"){
                     Admin()
                         .position(x:180, y: 40)
+                    
                 }
+                .font(.title)
+                .foregroundColor(.orange)
                     
                 NavigationLink("Guest page"){
                     Guest()
                 }
-                
+                .font(.title)
+                .foregroundColor(.orange)
             
                     
                     
