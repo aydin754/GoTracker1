@@ -6,14 +6,15 @@
 //
 import Foundation
 import CoreBluetooth
- 
+import Combine
 
-class BluethoothSimple: NSObject, ObservableObject, CBCentralManagerDelegate {
+
+class BluetoothSimple: NSObject, ObservableObject, CBCentralManagerDelegate {
     
     @Published var devices: [CBPeripheral] = []
     @Published var status = "Scanning..."
     
-    var manager: CBCentralManager!
+    @State var manager: CBCentralManager!
     
     override init() {
         super.init()
@@ -22,7 +23,7 @@ class BluethoothSimple: NSObject, ObservableObject, CBCentralManagerDelegate {
 }
 func centralMangerDidUpdateState(_ central: CBCentralManager) {
     if central.state == .poweredOn {
-        status= "Scanning..."
+        status = "Scanning..."
         manager.scanForPeripherals(withServices: nil)
         {else}
         status = "BlueTooth Off"
