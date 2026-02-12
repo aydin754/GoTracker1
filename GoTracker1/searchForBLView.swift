@@ -15,7 +15,7 @@ struct searchForBLView: View {
             
             List(bluetooth.devices, id: \.identifier) { device in
                 Button{
-                    bluetooth.connect(device)
+                    bluetooth.connec(device)
                 } label: {
                     Text(device.name ?? "Unknown Device")
                 }
