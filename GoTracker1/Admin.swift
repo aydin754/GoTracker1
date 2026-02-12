@@ -8,22 +8,24 @@ import SwiftUI
 struct Admin: View {
     var body: some View {
         VStack{
-            NavigationLink("+ Search For BLT"){
-                Admin2dav()
+            NavigationLink("+ Search For Bluetooth"){
+                searchForBLView()
                     .position(x:180,y:100)
                 
-                    
+                
             }
             Text("")
         }
-            .navigationTitle("Admin")
+        .navigationTitle("Admin")
         
         
         
         
-        }
-        
-        }
+    }
     
+}
+#Preview {
+    Admin()
+}
 
 
