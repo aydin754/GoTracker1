@@ -5,6 +5,7 @@
 //  Created by Aydin Metanovic on 1/16/26.
 //
 import SwiftUI
+import CoreBluetooth
 struct searchForBLView: View {
     @StateObject var bluetooth = BluetoothSimple()
     var body: some View {
@@ -15,7 +16,7 @@ struct searchForBLView: View {
             
             List(bluetooth.devices, id: \.identifier) { device in
                 Button{
-                    bluetooth.connec(device)
+                    bluetooth.connect(to: device)
                 } label: {
                     Text(device.name ?? "Unknown Device")
                 }
