@@ -28,6 +28,7 @@ struct ContentView: View {
                     
                 
                 Text("Hersey Go Tracker")
+                        .foregroundStyle(.brown)
                     .position(x: 180, y: 10)
                 
                 NavigationLink("Administrator"){
