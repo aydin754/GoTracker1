@@ -24,7 +24,7 @@ struct ContentView: View {
                 
             
                 
-                    
+                    Text("Firebase")
                     
                 
                 Text("Hersey Go Tracker")
