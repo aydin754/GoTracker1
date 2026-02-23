@@ -25,6 +25,7 @@ struct ContentView: View {
             
                 
                     Text("Firebase")
+                    Color.red
                     
                 
                 Text("Hersey Go Tracker")
