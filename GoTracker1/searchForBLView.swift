@@ -13,6 +13,7 @@ struct searchForBLView: View {
             Text(bluetooth.status)
                 .font(.headline)
                 .padding()
+                .foregroundStyle(.orange)
             
             List(bluetooth.devices, id: \.identifier) { device in
                 Button{
