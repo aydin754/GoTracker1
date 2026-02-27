@@ -7,12 +7,29 @@
 import SwiftUI
 struct Guest: View {
     var body: some View {
-        Text("")
-        .navigationBarTitle("Guest")
-        
-        NavigationLink("->") {
-            PlayerListView()
+        ZStack{
+            // this code is for the custom color
+            LinearGradient(
+                colors: [
+                    Color.black,
+                    Color.orange.opacity(0.2),
+                    Color.black
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+            
+            
+            
+            
+            Text("")
+                .navigationBarTitle("Guest")
+            
+            NavigationLink("->") {
+                PlayerListView()
+            }
         }
     }
+    
 }
-

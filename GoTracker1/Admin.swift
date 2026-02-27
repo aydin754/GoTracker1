@@ -7,25 +7,47 @@
 import SwiftUI
 struct Admin: View {
     var body: some View {
-        VStack{
-            NavigationLink("+ Search For Bluetooth"){
-                searchForBLView()
-                    .position(x:180,y:100)
+        NavigationStack{
+            ZStack{
+                // this code is for the custom color
+                LinearGradient(
+                    colors: [
+                        Color.black,
+                        Color.orange.opacity(0.2),
+                        Color.black
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .ignoresSafeArea()
+                
+                
+                
+                
+                
+                
+                
+                VStack{
+                    NavigationLink("+ Search For Bluetooth"){
+                        searchForBLView()
+                            .position(x:180,y:100)
+                        
+                        
+                        
+                        Text("")
+                    }
+                    
+                    
+                    
+                }
                 
                 
             }
-            Text("")
+            .navigationTitle("Admin")
         }
-        .navigationTitle("Admin")
-        
-        
-        
-        
     }
-    
 }
-#Preview {
-    Admin()
-}
-
+    #Preview{
+        Admin()
+    }
 
