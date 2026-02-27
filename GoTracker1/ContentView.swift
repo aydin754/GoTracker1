@@ -10,12 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            
-            
-            
-            ZStack{
-                // this code is for the custom color on the homepage black with orange
-                LinearGradient(
+        ZStack{
+        LinearGradient(
                     colors: [
                         Color.black,
                         Color.orange.opacity(0.9),
@@ -26,27 +22,13 @@ struct ContentView: View {
                 )
                 .ignoresSafeArea()
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                VStack{
-                    
+               VStack{
                     Image("school")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 250)
                         .opacity(0.9)
-                    
-                    
-                    
-                    
-                    
-                    Text("Hersey Go Tracker")
+                     Text("Hersey Go Tracker")
                         .font(.largeTitle)
                     
                         .foregroundColor(.white)
@@ -65,13 +47,6 @@ struct ContentView: View {
                     }
                     .font(.title)
                     .foregroundColor(.orange)
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     .bold()
                     .padding()
                     
