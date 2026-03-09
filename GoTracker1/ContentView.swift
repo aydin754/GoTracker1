@@ -8,6 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var bluetooth = BluetoothManager()
+        
+        var body: some View {
+            VStack {
+                
+                Text("Latitude: \(bluetooth.latitude)")
+                Text("Longitude: \(bluetooth.longitude)")
+                
+            }
+            .padding()
+        }
+    }
+    
+    
     var body: some View {
         NavigationStack{
         ZStack{
@@ -58,7 +72,7 @@ struct ContentView: View {
             
         }
     }
-}
+
 #Preview {
     ContentView()
 }
