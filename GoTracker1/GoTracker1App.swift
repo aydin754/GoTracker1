@@ -7,12 +7,16 @@
 
 import SwiftUI
 
+import SwiftUI
+
+import SwiftUI
+
 @main
-struct GoTracker1App: App {
+struct GoTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            // Replace `ContentView()` with your root view if different
-            ContentView()
+            Field()
+            
         }
     }
 }

@@ -4,23 +4,10 @@
 //
 //  Created by Aydin Metanovic on 12/17/25.
 //
-
+import MapKit
 import SwiftUI
 
-struct ContentView: View {
-    @StateObject var bluetooth = BluetoothManager()
-        
-        var body: some View {
-            VStack {
-                
-                Text("Latitude: \(bluetooth.latitude)")
-                Text("Longitude: \(bluetooth.longitude)")
-                
-            }
-            .padding()
-        }
-    }
-    
+
     
     var body: some View {
         NavigationStack{
@@ -74,6 +61,6 @@ struct ContentView: View {
     }
 
 #Preview {
-    ContentView()
+    
 }
 
