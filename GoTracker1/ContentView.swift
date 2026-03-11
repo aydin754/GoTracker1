@@ -7,12 +7,12 @@
 import MapKit
 import SwiftUI
 
+struct ContentView: View {
 
-    
     var body: some View {
         NavigationStack{
-        ZStack{
-        LinearGradient(
+            ZStack{
+                LinearGradient(
                     colors: [
                         Color.black,
                         Color.orange.opacity(0.9),
@@ -22,27 +22,27 @@ import SwiftUI
                     endPoint: .bottomTrailing
                 )
                 .ignoresSafeArea()
-                
-               VStack{
+
+                VStack{
+
                     Image("school")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 250)
                         .opacity(0.9)
-                     Text("Hersey Go Tracker")
+
+                    Text("Hersey Go Tracker")
                         .font(.largeTitle)
-                    
                         .foregroundColor(.white)
                         .position(x: 180, y: 10)
-                    
+
                     NavigationLink("Administrator"){
                         Admin()
                             .position(x:180, y: 40)
-                        
                     }
                     .font(.title)
                     .foregroundColor(.orange)
-                    
+
                     NavigationLink("Guest page"){
                         Guest()
                     }
@@ -50,17 +50,12 @@ import SwiftUI
                     .foregroundColor(.orange)
                     .bold()
                     .padding()
-                    
-                    
                 }
-                
-                
             }
-            
         }
     }
-
-#Preview {
-    
 }
 
+#Preview {
+    ContentView()
+}

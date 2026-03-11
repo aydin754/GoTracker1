@@ -7,16 +7,11 @@
 
 import SwiftUI
 
-import SwiftUI
-
-import SwiftUI
-
 @main
 struct GoTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            Field()
-            
+            ContentView()
         }
     }
 }
